@@ -59,7 +59,7 @@ git checkout -b 01-drafting-slides
 ```
 git add -A
 git commit -m 'genesis of slides'
-git push origin generated-pdfs
+git push origin 01-drafting-slides
 ```
 
 **11.** Create pull request
