@@ -8,7 +8,7 @@
 #### Setting it up
 **01.** Add `shh-rsa` key in https://github.com/settings/keys following [the documentation](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) in github.
 
-02. Add a new secret variable called `DEPLOY_KEY` in 
+**02.** Add a new secret variable called `DEPLOY_KEY` in 
 https://github.com/mxochicale/nmc3/settings/secrets 
 
 Where the value is taken from `id_rsa` with 
@@ -32,12 +32,12 @@ See this [main.yml](https://github.com/mxochicale/learning-latex-action/blob/mas
 
 
 
-03. Commit genesis in the master using `[skip ci]` to the master branch
+**03.** Commit genesis in the master using `[skip ci]` to the master branch
 
 
-04. Raise an issue
+**04.** Raise an issue
 
-06. Create a generated-pdfs branch for the pdf files [(see more)](https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222).
+**06.** Create a generated-pdfs branch for the pdf files [(see more)](https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222).
 ```
 git checkout -b generated-pdfs
 rm -rf * README.md .github .gitignore *swp ~.git 
@@ -46,20 +46,26 @@ git commit -m 'clean generated-pdfs branch'
 git push origin generated-pdfs
 ```
 
-07. Create branch for drafting document
+**07.** Create branch for drafting document
 ```
 git checkout master
 git checkout -b 01-drafting-slides
 ```
 
-08. add latex document path
+**08.** add latex document path
 
 
-10. commit changes
+**10.** commit changes
 ```
 git add -A
 git commit -m 'genesis of slides'
 git push origin generated-pdfs
+```
+
+**11.** Create pull request
+```
+Title: [WIP] Drafting slides
+Content: Resolves #1
 ```
 
 ### (b) Local build
@@ -71,4 +77,3 @@ git push origin generated-pdfs
 
 ## local build
 make clean && make && evince main.pdf
-

@@ -1,0 +1,55 @@
+\documentclass[xcolor={dvipsnames},aspectratio=169,10pt]{beamer}
+\input{preamble.tex}
+
+\title{Nonlinear analysis to quantify human movement variability from time-series data}
+%\subtitle{Challenges and opportunities }
+\author{Miguel Xochicale  (\faGithub @mxochicale  \faTwitter @\_mxochicale) 
+}
+
+\date{October 28, 2020; 17h30m BST\\
+	  Neuromatch 3.0}
+\institute{
+	School of Biomedical Engineering and Imaging Sciences \\
+	King's College London
+	}
+
+\titlegraphic{
+  \begin{tikzpicture}[overlay, remember picture]
+    \node[%
+      above right=0.35cm and -0.2cm of current page footer area.south west,
+      anchor=south west,
+      inner sep=0pt] {%
+      \usebeamerfont{footline}
+      \begin{tabular}{lm{.8\textwidth}}
+        \href{http://creativecommons.org/licenses/by/4.0/}{\ccby} &
+        This work is licensed under a 
+	\href{http://creativecommons.org/licenses/by/4.0/}
+		{Creative Commons ``Attribution 4.0 International''} license. 
+	\par Get source of this slides and see further references 
+		from \url{https://github.com/mxochicale/nmc3}.
+      \end{tabular}
+    };
+    \node[%
+      above left=0.35cm and 0cm of current page footer area.south east,
+      anchor=south east,
+      inner sep=0pt]{\qrcode[height=1.5cm]{https://github.com/mxochicale/}};
+  \end{tikzpicture}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Contents}
+    \tableofcontents
+\end{frame}
+
+\input{sources/my-research}
+
+
+\begin{frame}[standout]
+  Thanks \\
+  Questions?
+\end{frame}
+
+\end{document}
