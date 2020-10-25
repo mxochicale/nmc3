@@ -1,9 +1,11 @@
 \documentclass[xcolor={dvipsnames},aspectratio=169,10pt]{beamer}
 \input{preamble.tex}
+\usepackage{cite}
+
 
 \title{Nonlinear analysis to quantify human movement variability from time-series data}
 %\subtitle{Challenges and opportunities }
-\author{Miguel Xochicale  (\faGithub @mxochicale  \faTwitter @\_mxochicale) 
+\author{ \textbf{Miguel Xochicale, PhD}  (\faTwitter @\_mxochicale \faGithub @mxochicale  )
 }
 
 \date{October 28, 2020; 17h30m BST\\
@@ -44,7 +46,36 @@
     \tableofcontents
 \end{frame}
 
-\input{sources/my-research}
+\input{sources/modeling-movement-variability}
+\input{sources/nonlinear-analysis}
+
+
+%\subsection{References}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{References}
+    \begin{thebibliography}{10}
+
+\beamertemplatearticlebibitems
+
+	\bibitem{xochicale2020}
+	Xochicale Miguel
+	\newblock 
+	Nonlinear methods to quantify Movement Variability 
+	in Human-Humanoid Interaction Activities
+	\newblock In Submission to Scientific Reports  
+      	\newblock \url{https://arxiv.org/abs/1810.09249}
+
+	%\bibitem{xochicale2019}
+	%Xochicale Miguel
+	%\newblock 
+	%Nonlinear Analysis to Quantify Movement 
+	%Variability in Human-Humanoid Interaction 
+      	%\newblock Open Access Ph.D. Thesis (2019) 
+      	%\newblock \url{https://github.com/mxochicale-phd/thesis}
+
+    \end{thebibliography}
+\end{frame}
+
 
 
 \begin{frame}[standout]
