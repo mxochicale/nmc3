@@ -36,6 +36,21 @@ Theme E: Computation and Techniques
 ## Licence and Citation 
 This work is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). Hence, you are free to reuse it and modify it as much as you want and as long as you cite this work as original reference and you re-share your work under the same terms.
 
+### Bibtex 
+```
+@misc{miguel_xochicale_2020_4147673,
+  author       = {Miguel Xochicale and
+                  Chris Baber},
+  title        = {{Nonlinear analysis to quantify human movement 
+                   variability from time-series data}},
+  month        = oct,
+  year         = 2020,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.4147673},
+  url          = {https://doi.org/10.5281/zenodo.4147673}
+}
+```
+
 ## Contact 
 If you have specific questions about the content of this repository, you can contact 
 [Miguel Xochicale](mailto:miguel.xochicale@gmail.com?subject="[nmc3]"). 
