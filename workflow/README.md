@@ -1,14 +1,14 @@
 # Slides
 
+### Create repository
 **00.** Create repository    
 **01.** clone it locally  
 **02.** create .gitignore  
 
-### (a) Github Actions
-#### Setting it up
+### Create Github Actions
 **01.** Add `shh-rsa` key in https://github.com/settings/keys following [the documentation](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) in github.
 
-02. Add a new secret variable called `DEPLOY_KEY` in 
+**02.** Add a new secret variable called `DEPLOY_KEY` in 
 https://github.com/mxochicale/nmc3/settings/secrets 
 
 Where the value is taken from `id_rsa` with 
@@ -20,7 +20,7 @@ which looks like:
 -----END RSA PRIVATE KEY-----
 ```
 
-
+### Create Github workflow
 **03.** Create github action workflow
 `.github/workflow/*.yml` and then create main.yml 
 ```
@@ -32,12 +32,11 @@ See this [main.yml](https://github.com/mxochicale/learning-latex-action/blob/mas
 
 
 
-03. Commit genesis in the master using `[skip ci]` to the master branch
+**04.** Commit genesis in the master using `[skip ci]` to the master branch
 
+**05.** Raise an issue
 
-04. Raise an issue
-
-06. Create a generated-pdfs branch for the pdf files [(see more)](https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222).
+**06.** Create a generated-pdfs branch for the pdf files [(see more)](https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222).
 ```
 git checkout -b generated-pdfs
 rm -rf * README.md .github .gitignore *swp ~.git 
@@ -46,29 +45,33 @@ git commit -m 'clean generated-pdfs branch'
 git push origin generated-pdfs
 ```
 
-07. Create branch for drafting document
+**07.** Create branch for drafting document
 ```
 git checkout master
 git checkout -b 01-drafting-slides
 ```
 
-08. add latex document path
+**08.** add path for latex document(s) 
 
-
-10. commit changes
+**09.** commit changes
 ```
 git add -A
 git commit -m 'genesis of slides'
-git push origin generated-pdfs
+git push origin 01-drafting-slides
+```
+
+**10.** Create pull request
+```
+Title: [WIP] Drafting slides
+Content: Resolves #1 
+If CI is successful, slides will be build [here](https://github.com/mxochicale/nmc3/blob/generated-pdfs/slides.pdf)
 ```
 
 ### (b) Local build
-# Local build in Ubuntu18.04
 
-## Requirements 
+#### Requirements 
 * Install latest version of (i.e., Tex Live 2020 [:link:](https://github.com/mxochicale/latex/tree/master/installation)).
 * sudo apt-get install python-pygments #https://tex.stackexchange.com/questions/40083/how-to-install-minted-in-ubuntu
 
-## local build
+#### local build
 make clean && make && evince main.pdf
-
