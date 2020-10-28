@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (1.0.1+r73)"
-   sodipodi:docname="drawing.svg">
+   sodipodi:docname="drawing-v00.svg">
   <defs
      id="defs2">
     <marker
@@ -337,15 +337,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.83508248"
-     inkscape:cx="614.30883"
-     inkscape:cy="243.41062"
+     inkscape:zoom="0.35758633"
+     inkscape:cx="691.33567"
+     inkscape:cy="386.34992"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      borderlayer="true"
-     inkscape:window-width="1433"
+     inkscape:window-width="1500"
      inkscape:window-height="945"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -373,8 +373,8 @@
        id="rect76"
        width="399.28946"
        height="179.88901"
-       x="-27.662857"
-       y="143.67287" />
+       x="-27.105686"
+       y="146.81326" />
     <image
        y="361.92184"
        x="12.569911"
@@ -541,5 +541,16 @@
        preserveAspectRatio="none"
        height="23.022184"
        width="24.26936" />
+    <text
+       id="text1022"
+       y="122.71527"
+       x="-31.691441"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.264583"
+         y="122.71527"
+         x="-31.691441"
+         id="tspan1020"
+         sodipodi:role="line">V00</tspan></text>
   </g>
 </svg>
